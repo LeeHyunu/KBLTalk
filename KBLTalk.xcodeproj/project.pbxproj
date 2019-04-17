@@ -12,6 +12,8 @@
 		A07D21A322608BA400E80962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A122608BA400E80962 /* Main.storyboard */; };
 		A07D21A522608BA500E80962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A422608BA500E80962 /* Assets.xcassets */; };
 		A07D21A822608BA500E80962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A622608BA500E80962 /* LaunchScreen.storyboard */; };
+		A07D21B1226405F900E80962 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B0226405F900E80962 /* RegisterViewController.swift */; };
+		A07D21B822641C9100E80962 /* NPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B722641C9100E80962 /* NPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A07D21A422608BA500E80962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07D21A722608BA500E80962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A07D21A922608BA500E80962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07D21B0226405F900E80962 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A07D21B722641C9100E80962 /* NPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 		A07D219C22608BA400E80962 /* KBLTalk */ = {
 			isa = PBXGroup;
 			children = (
+				A07D21B422641B0100E80962 /* Protocol */,
+				A07D21B322641AEB00E80962 /* View */,
+				A07D21AF226405D100E80962 /* Register */,
 				A07D219D22608BA400E80962 /* AppDelegate.swift */,
 				A07D219F22608BA400E80962 /* ViewController.swift */,
 				A07D21A122608BA400E80962 /* Main.storyboard */,
@@ -62,6 +69,29 @@
 				A07D21A922608BA500E80962 /* Info.plist */,
 			);
 			path = KBLTalk;
+			sourceTree = "<group>";
+		};
+		A07D21AF226405D100E80962 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A07D21B0226405F900E80962 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A07D21B322641AEB00E80962 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A07D21B722641C9100E80962 /* NPicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A07D21B422641B0100E80962 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07D21B1226405F900E80962 /* RegisterViewController.swift in Sources */,
+				A07D21B822641C9100E80962 /* NPicker.swift in Sources */,
 				A07D21A022608BA400E80962 /* ViewController.swift in Sources */,
 				A07D219E22608BA400E80962 /* AppDelegate.swift in Sources */,
 			);
