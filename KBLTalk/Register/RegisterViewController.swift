@@ -42,11 +42,21 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "확인", style: .default, handler: {
             (UIAlertAction) in
-            
+//            if let chatroomVC = self.storyboard?.instantiateViewController(withIdentifier: "chatroomList") {
+//                chatroomVC.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+//                self.present(chatroomVC, animated: true, completion: nil)
+//            }
+            self.gotoChatroom()
         }))
         self.present(alert, animated: true, completion: nil)
         
     }
+    
+
+    func gotoChatroom() {
+        performSegue(withIdentifier: "registeration", sender: self)
+    }
+    
     
     //MARK: - Delegates
     //keyboard hide when clicked returnButton

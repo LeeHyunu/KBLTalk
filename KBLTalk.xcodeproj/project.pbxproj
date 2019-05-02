@@ -14,6 +14,11 @@
 		A07D21A822608BA500E80962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A622608BA500E80962 /* LaunchScreen.storyboard */; };
 		A07D21B1226405F900E80962 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B0226405F900E80962 /* RegisterViewController.swift */; };
 		A07D21B822641C9100E80962 /* NPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B722641C9100E80962 /* NPicker.swift */; };
+		A07D21BB22784CF800E80962 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21BA22784CF800E80962 /* ChatRoomViewController.swift */; };
+		A07D21BD22784DE900E80962 /* ChatRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21BC22784DE900E80962 /* ChatRoomCell.swift */; };
+		A07D21BF2278519200E80962 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21BE2278519200E80962 /* ChatRoomViewModel.swift */; };
+		A07D21C12278525000E80962 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21C02278525000E80962 /* ChatRoomModel.swift */; };
+		A07D21C3227853A300E80962 /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21C2227853A300E80962 /* CellRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		A07D21A922608BA500E80962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A07D21B0226405F900E80962 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A07D21B722641C9100E80962 /* NPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPicker.swift; sourceTree = "<group>"; };
+		A07D21BA22784CF800E80962 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		A07D21BC22784DE900E80962 /* ChatRoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomCell.swift; sourceTree = "<group>"; };
+		A07D21BE2278519200E80962 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		A07D21C02278525000E80962 /* ChatRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
+		A07D21C2227853A300E80962 /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		A07D219C22608BA400E80962 /* KBLTalk */ = {
 			isa = PBXGroup;
 			children = (
+				A07D21B922784CCA00E80962 /* ChatRoom */,
 				A07D21B422641B0100E80962 /* Protocol */,
 				A07D21B322641AEB00E80962 /* View */,
 				A07D21AF226405D100E80962 /* Register */,
@@ -92,6 +103,26 @@
 			children = (
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A07D21B922784CCA00E80962 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				A07D21C422785C7B00E80962 /* View&ViewModel */,
+				A07D21BA22784CF800E80962 /* ChatRoomViewController.swift */,
+				A07D21C02278525000E80962 /* ChatRoomModel.swift */,
+				A07D21C2227853A300E80962 /* CellRepresentable.swift */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		A07D21C422785C7B00E80962 /* View&ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A07D21BC22784DE900E80962 /* ChatRoomCell.swift */,
+				A07D21BE2278519200E80962 /* ChatRoomViewModel.swift */,
+			);
+			path = "View&ViewModel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07D21B1226405F900E80962 /* RegisterViewController.swift in Sources */,
+				A07D21C3227853A300E80962 /* CellRepresentable.swift in Sources */,
 				A07D21B822641C9100E80962 /* NPicker.swift in Sources */,
+				A07D21BB22784CF800E80962 /* ChatRoomViewController.swift in Sources */,
 				A07D21A022608BA400E80962 /* ViewController.swift in Sources */,
+				A07D21C12278525000E80962 /* ChatRoomModel.swift in Sources */,
+				A07D21BD22784DE900E80962 /* ChatRoomCell.swift in Sources */,
 				A07D219E22608BA400E80962 /* AppDelegate.swift in Sources */,
+				A07D21BF2278519200E80962 /* ChatRoomViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

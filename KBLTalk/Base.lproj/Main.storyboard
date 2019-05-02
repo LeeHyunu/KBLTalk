@@ -34,6 +34,64 @@
             </objects>
             <point key="canvasLocation" x="-254" y="45"/>
         </scene>
+        <!--Chat Room View Controller-->
+        <scene sceneID="Ynd-oX-zI6">
+            <objects>
+                <viewController storyboardIdentifier="chatroomList" id="eSh-Vk-sFn" customClass="ChatRoomViewController" customModule="KBLTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGp-9H-xIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-hR-rzU">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatRoom" id="O0Q-DM-ueb" customClass="ChatRoomCell" customModule="KBLTalk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O0Q-DM-ueb" id="q05-3A-Z0f" customClass="ChatRoomCell" customModule="KBLTalk" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-3n-F7t">
+                                                    <rect key="frame" x="30" y="0.0" width="88" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3c-3i-2zU">
+                                                    <rect key="frame" x="153" y="11" width="177" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgProfile" destination="9zb-3n-F7t" id="Tun-bA-VGg"/>
+                                            <outlet property="laChatRoomName" destination="O3c-3i-2zU" id="ee3-2m-4d7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xrH-uy-2bD" firstAttribute="bottom" secondItem="6TE-hR-rzU" secondAttribute="bottom" id="4M4-1e-RcS"/>
+                            <constraint firstItem="6TE-hR-rzU" firstAttribute="leading" secondItem="xrH-uy-2bD" secondAttribute="leading" id="IyT-Bs-ovS"/>
+                            <constraint firstItem="6TE-hR-rzU" firstAttribute="top" secondItem="xrH-uy-2bD" secondAttribute="top" id="eQj-Va-j1L"/>
+                            <constraint firstItem="xrH-uy-2bD" firstAttribute="trailing" secondItem="6TE-hR-rzU" secondAttribute="trailing" id="l68-t2-8w1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xrH-uy-2bD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ICS-lf-n8x"/>
+                    <connections>
+                        <outlet property="tbChatrooms" destination="6TE-hR-rzU" id="siT-dT-99E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziY-hC-6KY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="-662.06896551724139"/>
+        </scene>
         <!--Register View Controller-->
         <scene sceneID="bQh-pI-GcJ">
             <objects>
@@ -116,11 +174,12 @@
                         <outlet property="PiDate" destination="3hr-b3-USa" id="IXX-RT-n0x"/>
                         <outlet property="PiSex" destination="TIP-7h-mxW" id="fX2-qz-2A2"/>
                         <outlet property="lUserName" destination="l1y-ul-RoP" id="GhJ-j5-4UM"/>
+                        <segue destination="eSh-Vk-sFn" kind="modal" identifier="registeration" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sT6-Op-64C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZs-Jm-A7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771.01449275362324" y="18.75"/>
+            <point key="canvasLocation" x="-15" y="-662"/>
         </scene>
     </scenes>
 </document>
