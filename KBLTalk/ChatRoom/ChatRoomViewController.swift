@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ChatRoomViewController: UIViewController {
     var data = [CellRepresentable]()
@@ -18,19 +20,43 @@ class ChatRoomViewController: UIViewController {
         tbChatrooms.delegate = self
         tbChatrooms.dataSource = self
         
+        
+//        //test
+//        let db = SQLiteHelper()
+//        db.createTable()
+//        db.insertOldST()
+//        db.selectOldST()
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         initDatas()
     }
     
+    
     func initDatas() {
-        data = [
-            ChatRoomViewModel(room: ChatRoomModel(roomName: "testRoom1", profilePath: nil)),
-            ChatRoomViewModel(room: ChatRoomModel(roomName: "testRoom2", profilePath: nil)),
-            ChatRoomViewModel(room: ChatRoomModel(roomName: "testRoom3", profilePath: nil)),
-            ChatRoomViewModel(room: ChatRoomModel(roomName: "testRoom4", profilePath: nil)),
-            ChatRoomViewModel(room: ChatRoomModel(roomName: "testRoom5", profilePath: nil)),
-            ChatRoomViewModel(room: ChatRoomModel(roomName: "testRoom6", profilePath: nil))
-        ]
-        tbChatrooms.reloadData()
+        ChatRoomNetworkModel
+            .getList(caller: NetworkRequestBuilder<Chatrooms>.init()
+                .buildFail { errorString in
+                    print(errorString)
+                }
+                .buildSuccess { resultData in
+                    if resultData.result.resultCode == "001" {
+                        if let chatrooms = resultData.data {
+                            self.data.removeAll()
+                            for chatroom in chatrooms {
+                                self.data.append(ChatRoomViewModel(room: chatroom))
+                            }
+                            self.tbChatrooms.reloadData()
+                        }
+                        
+                    }else {
+                        self.data.removeAll()
+                        self.tbChatrooms.reloadData()
+                        //empty list
+                    }
+            }
+        )
     }
 
 }

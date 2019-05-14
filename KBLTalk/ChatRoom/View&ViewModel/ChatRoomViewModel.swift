@@ -11,19 +11,21 @@ import UIKit
 
 class ChatRoomViewModel : CellRepresentable{
     var rowHeight: CGFloat = 80
-    var room : ChatRoomModel
+    var name: String
+    var profilePath : String
     
-    init(room: ChatRoomModel) {
-        self.room = room
-    }
-    
-    var imgPath: String {
-        if let path = room.profilePath {
-            return path
+    init(name: String, profilePath: String?) {
+        self.name = name
+        guard let path = profilePath , path != "noData" else{
+            self.profilePath = "defaultProfile"
+            return
         }
-        return "defaultProfile"
+        self.profilePath = path
     }
     
+    convenience init(room: ChatroomVO) {
+        self.init(name : room.id, profilePath: room.profilePath)
+    }
     
     func cellInstance(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatRoom", for: indexPath) as! ChatRoomCell

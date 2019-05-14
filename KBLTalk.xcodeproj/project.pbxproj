@@ -12,13 +12,26 @@
 		A07D21A322608BA400E80962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A122608BA400E80962 /* Main.storyboard */; };
 		A07D21A522608BA500E80962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A422608BA500E80962 /* Assets.xcassets */; };
 		A07D21A822608BA500E80962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07D21A622608BA500E80962 /* LaunchScreen.storyboard */; };
-		A07D21B1226405F900E80962 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B0226405F900E80962 /* RegisterViewController.swift */; };
+		A07D21B1226405F900E80962 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B0226405F900E80962 /* AddFriendViewController.swift */; };
 		A07D21B822641C9100E80962 /* NPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21B722641C9100E80962 /* NPicker.swift */; };
 		A07D21BB22784CF800E80962 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21BA22784CF800E80962 /* ChatRoomViewController.swift */; };
 		A07D21BD22784DE900E80962 /* ChatRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21BC22784DE900E80962 /* ChatRoomCell.swift */; };
 		A07D21BF2278519200E80962 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21BE2278519200E80962 /* ChatRoomViewModel.swift */; };
-		A07D21C12278525000E80962 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21C02278525000E80962 /* ChatRoomModel.swift */; };
 		A07D21C3227853A300E80962 /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D21C2227853A300E80962 /* CellRepresentable.swift */; };
+		A0839ACA228421D000429514 /* SQLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0839AC9228421D000429514 /* SQLiteHelper.swift */; };
+		A0839ACD2284F92800429514 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0839ACC2284F92800429514 /* SQLite.framework */; };
+		A0839AEF2289422A00429514 /* ChatRoomNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0839AEE2289422A00429514 /* ChatRoomNetworkModel.swift */; };
+		A0839AF1228942DD00429514 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0839AF0228942DD00429514 /* Alamofire.framework */; };
+		A0B199A2228A526B00DF2CEC /* NetworkErrorCheckable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B199A1228A526B00DF2CEC /* NetworkErrorCheckable.swift */; };
+		A0B199A4228A534D00DF2CEC /* RequestURLCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B199A3228A534D00DF2CEC /* RequestURLCreatable.swift */; };
+		A0B199A9228A5D1500DF2CEC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B199A6228A5D1500DF2CEC /* RxSwift.framework */; };
+		A0B199AA228A5D1500DF2CEC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B199A7228A5D1500DF2CEC /* SwiftyJSON.framework */; };
+		A0B199AB228A7C2300DF2CEC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B199A5228A5D1500DF2CEC /* RxCocoa.framework */; };
+		A0B199AD228A7CDD00DF2CEC /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B199AC228A7CDD00DF2CEC /* RxRelay.framework */; };
+		A0B199AF228A7ED600DF2CEC /* NetworkResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B199AE228A7ED600DF2CEC /* NetworkResults.swift */; };
+		A0B199B1228AA74800DF2CEC /* NetworkRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B199B0228AA74800DF2CEC /* NetworkRequestBuilder.swift */; };
+		A0B199B3228AC2F300DF2CEC /* Chatrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B199B2228AC2F300DF2CEC /* Chatrooms.swift */; };
+		A0B199B8228ADCBA00DF2CEC /* MainNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B199B7228ADCBA00DF2CEC /* MainNetworkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +42,26 @@
 		A07D21A422608BA500E80962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07D21A722608BA500E80962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A07D21A922608BA500E80962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A07D21B0226405F900E80962 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A07D21B0226405F900E80962 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		A07D21B722641C9100E80962 /* NPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPicker.swift; sourceTree = "<group>"; };
 		A07D21BA22784CF800E80962 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		A07D21BC22784DE900E80962 /* ChatRoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomCell.swift; sourceTree = "<group>"; };
 		A07D21BE2278519200E80962 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
-		A07D21C02278525000E80962 /* ChatRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
 		A07D21C2227853A300E80962 /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		A0839AC9228421D000429514 /* SQLiteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHelper.swift; sourceTree = "<group>"; };
+		A0839ACC2284F92800429514 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		A0839AEE2289422A00429514 /* ChatRoomNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomNetworkModel.swift; sourceTree = "<group>"; };
+		A0839AF0228942DD00429514 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A0B199A1228A526B00DF2CEC /* NetworkErrorCheckable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorCheckable.swift; sourceTree = "<group>"; };
+		A0B199A3228A534D00DF2CEC /* RequestURLCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestURLCreatable.swift; sourceTree = "<group>"; };
+		A0B199A5228A5D1500DF2CEC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		A0B199A6228A5D1500DF2CEC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		A0B199A7228A5D1500DF2CEC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A0B199AC228A7CDD00DF2CEC /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		A0B199AE228A7ED600DF2CEC /* NetworkResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResults.swift; sourceTree = "<group>"; };
+		A0B199B0228AA74800DF2CEC /* NetworkRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestBuilder.swift; sourceTree = "<group>"; };
+		A0B199B2228AC2F300DF2CEC /* Chatrooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatrooms.swift; sourceTree = "<group>"; };
+		A0B199B7228ADCBA00DF2CEC /* MainNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B199AD228A7CDD00DF2CEC /* RxRelay.framework in Frameworks */,
+				A0B199AB228A7C2300DF2CEC /* RxCocoa.framework in Frameworks */,
+				A0B199A9228A5D1500DF2CEC /* RxSwift.framework in Frameworks */,
+				A0B199AA228A5D1500DF2CEC /* SwiftyJSON.framework in Frameworks */,
+				A0839AF1228942DD00429514 /* Alamofire.framework in Frameworks */,
+				A0839ACD2284F92800429514 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +86,7 @@
 			children = (
 				A07D219C22608BA400E80962 /* KBLTalk */,
 				A07D219B22608BA400E80962 /* Products */,
+				A0839ACB2284F92800429514 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,12 +101,11 @@
 		A07D219C22608BA400E80962 /* KBLTalk */ = {
 			isa = PBXGroup;
 			children = (
+				A0B199B5228ADC7B00DF2CEC /* Main */,
+				A0B199B4228AD7F900DF2CEC /* Util */,
 				A07D21B922784CCA00E80962 /* ChatRoom */,
-				A07D21B422641B0100E80962 /* Protocol */,
-				A07D21B322641AEB00E80962 /* View */,
-				A07D21AF226405D100E80962 /* Register */,
+				A07D21AF226405D100E80962 /* AddFriend */,
 				A07D219D22608BA400E80962 /* AppDelegate.swift */,
-				A07D219F22608BA400E80962 /* ViewController.swift */,
 				A07D21A122608BA400E80962 /* Main.storyboard */,
 				A07D21A422608BA500E80962 /* Assets.xcassets */,
 				A07D21A622608BA500E80962 /* LaunchScreen.storyboard */,
@@ -82,12 +114,12 @@
 			path = KBLTalk;
 			sourceTree = "<group>";
 		};
-		A07D21AF226405D100E80962 /* Register */ = {
+		A07D21AF226405D100E80962 /* AddFriend */ = {
 			isa = PBXGroup;
 			children = (
-				A07D21B0226405F900E80962 /* RegisterViewController.swift */,
+				A07D21B0226405F900E80962 /* AddFriendViewController.swift */,
 			);
-			path = Register;
+			path = AddFriend;
 			sourceTree = "<group>";
 		};
 		A07D21B322641AEB00E80962 /* View */ = {
@@ -98,19 +130,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		A07D21B422641B0100E80962 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
 		A07D21B922784CCA00E80962 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				A0839AED2289420800429514 /* Network */,
 				A07D21C422785C7B00E80962 /* View&ViewModel */,
 				A07D21BA22784CF800E80962 /* ChatRoomViewController.swift */,
-				A07D21C02278525000E80962 /* ChatRoomModel.swift */,
 				A07D21C2227853A300E80962 /* CellRepresentable.swift */,
 			);
 			path = ChatRoom;
@@ -125,6 +150,74 @@
 			path = "View&ViewModel";
 			sourceTree = "<group>";
 		};
+		A0839AC8228421B700429514 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A0839AC9228421D000429514 /* SQLiteHelper.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A0839ACB2284F92800429514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B199AC228A7CDD00DF2CEC /* RxRelay.framework */,
+				A0B199A5228A5D1500DF2CEC /* RxCocoa.framework */,
+				A0B199A6228A5D1500DF2CEC /* RxSwift.framework */,
+				A0B199A7228A5D1500DF2CEC /* SwiftyJSON.framework */,
+				A0839AF0228942DD00429514 /* Alamofire.framework */,
+				A0839ACC2284F92800429514 /* SQLite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0839AED2289420800429514 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0839AEE2289422A00429514 /* ChatRoomNetworkModel.swift */,
+				A0B199B2228AC2F300DF2CEC /* Chatrooms.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0B199A0228A522A00DF2CEC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0B199A1228A526B00DF2CEC /* NetworkErrorCheckable.swift */,
+				A0B199A3228A534D00DF2CEC /* RequestURLCreatable.swift */,
+				A0B199AE228A7ED600DF2CEC /* NetworkResults.swift */,
+				A0B199B0228AA74800DF2CEC /* NetworkRequestBuilder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0B199B4228AD7F900DF2CEC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A0839AC8228421B700429514 /* DB */,
+				A07D21B322641AEB00E80962 /* View */,
+				A0B199A0228A522A00DF2CEC /* Network */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A0B199B5228ADC7B00DF2CEC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A0B199B6228ADC9700DF2CEC /* Network */,
+				A07D219F22608BA400E80962 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A0B199B6228ADC9700DF2CEC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0B199B7228ADCBA00DF2CEC /* MainNetworkModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +228,7 @@
 				A07D219622608BA400E80962 /* Sources */,
 				A07D219722608BA400E80962 /* Frameworks */,
 				A07D219822608BA400E80962 /* Resources */,
+				A0839ACE2284F93100429514 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -191,20 +285,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0839ACE2284F93100429514 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A07D219622608BA400E80962 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07D21B1226405F900E80962 /* RegisterViewController.swift in Sources */,
+				A07D21B1226405F900E80962 /* AddFriendViewController.swift in Sources */,
+				A0B199B8228ADCBA00DF2CEC /* MainNetworkModel.swift in Sources */,
 				A07D21C3227853A300E80962 /* CellRepresentable.swift in Sources */,
+				A0B199A4228A534D00DF2CEC /* RequestURLCreatable.swift in Sources */,
 				A07D21B822641C9100E80962 /* NPicker.swift in Sources */,
 				A07D21BB22784CF800E80962 /* ChatRoomViewController.swift in Sources */,
+				A0B199A2228A526B00DF2CEC /* NetworkErrorCheckable.swift in Sources */,
 				A07D21A022608BA400E80962 /* ViewController.swift in Sources */,
-				A07D21C12278525000E80962 /* ChatRoomModel.swift in Sources */,
+				A0839ACA228421D000429514 /* SQLiteHelper.swift in Sources */,
 				A07D21BD22784DE900E80962 /* ChatRoomCell.swift in Sources */,
 				A07D219E22608BA400E80962 /* AppDelegate.swift in Sources */,
+				A0B199B1228AA74800DF2CEC /* NetworkRequestBuilder.swift in Sources */,
 				A07D21BF2278519200E80962 /* ChatRoomViewModel.swift in Sources */,
+				A0B199B3228AC2F300DF2CEC /* Chatrooms.swift in Sources */,
+				A0839AEF2289422A00429514 /* ChatRoomNetworkModel.swift in Sources */,
+				A0B199AF228A7ED600DF2CEC /* NetworkResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +480,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZMY3HQGE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KBLTalk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,6 +503,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZMY3HQGE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KBLTalk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

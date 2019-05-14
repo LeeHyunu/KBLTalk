@@ -23,8 +23,8 @@ class ChatRoomCell: UITableViewCell {
     }
 
     func setViews(viewModel: ChatRoomViewModel) {
-        imgProfile.image = UIImage(named: viewModel.imgPath)
-        laChatRoomName.text = viewModel.room.roomName
+        imgProfile.image = UIImage(named: viewModel.profilePath)
+        laChatRoomName.text = viewModel.name
     }
     
 }

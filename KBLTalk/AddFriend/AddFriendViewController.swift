@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  AddFriendViewController.swift
 //  KBLTalk
 //
 //  Created by NICE_hwlee on 15/04/2019.
@@ -7,21 +7,36 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class RegisterViewController: UIViewController, UITextFieldDelegate {
+class AddFriendViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var lUserName: UITextField!
     @IBOutlet weak var PiSex: NPicker!
     @IBOutlet weak var PiDate: UIDatePicker!
+    
+    let disposeBag = DisposeBag()
     
     //MARK: - lifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
+        bindViews()
     }
     
     //MARK: - init viewInfos
     func setViews() {
         PiSex.setArrays(["MAN","WOMAN"])
+        
+    }
+    
+    func bindViews() {
+        btnBack.rx.tap
+            .subscribe(onNext: {
+                self.dismiss(animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
     
     //MARK: - register
@@ -42,21 +57,21 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "확인", style: .default, handler: {
             (UIAlertAction) in
-//            if let chatroomVC = self.storyboard?.instantiateViewController(withIdentifier: "chatroomList") {
-//                chatroomVC.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
-//                self.present(chatroomVC, animated: true, completion: nil)
-//            }
-            self.gotoChatroom()
+            ChatRoomNetworkModel.addFriends(caller: NetworkRequestBuilder<NetworkResults>.init()
+                        .buildParameter(params:
+                            ["id": userName,
+                             "pw":"1234",
+                             "profilePath":"noData"])
+                        .buildFail { errorString in
+                            print(errorString)
+                        }.buildSuccess { resultData in
+                            print(resultData)
+                            self.dismiss(animated: true, completion: nil)
+                    })
         }))
         self.present(alert, animated: true, completion: nil)
         
     }
-    
-
-    func gotoChatroom() {
-        performSegue(withIdentifier: "registeration", sender: self)
-    }
-    
     
     //MARK: - Delegates
     //keyboard hide when clicked returnButton
