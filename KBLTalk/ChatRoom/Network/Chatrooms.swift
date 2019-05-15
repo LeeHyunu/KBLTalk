@@ -18,12 +18,10 @@ struct Chatrooms : Codable {
 
 struct ChatroomVO : Codable {
     var id: String
-    var pw: String
     var profilePath: String?
     
     private enum CodingKeys: String, CodingKey {
         case id
-        case pw
         case profilePath
     }
 }

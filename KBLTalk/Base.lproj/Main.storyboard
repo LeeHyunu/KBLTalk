@@ -104,12 +104,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTf-Tl-biS">
+                                <rect key="frame" x="46" y="391" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Tl-JT-3oH"/>
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="DSW-hM-7Y9" id="G0R-Ux-NQS"/>
+                        <outlet property="btnRegister" destination="PTf-Tl-biS" id="jg5-Dc-RsO"/>
                         <outlet property="tfId" destination="7Vm-Ko-xZA" id="qct-85-rsL"/>
                         <outlet property="tfPw" destination="xMs-Ls-06P" id="iT1-Zc-7FB"/>
                         <segue destination="eSh-Vk-sFn" kind="presentation" identifier="login" id="PTc-gs-T9i"/>

@@ -60,7 +60,6 @@ class AddFriendViewController: UIViewController, UITextFieldDelegate {
             ChatRoomNetworkModel.addFriends(caller: NetworkRequestBuilder<NetworkResults>.init()
                         .buildParameter(params:
                             ["id": userName,
-                             "pw":"1234",
                              "profilePath":"noData"])
                         .buildFail { errorString in
                             print(errorString)
